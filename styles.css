@@ -1,0 +1,164 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #ffcc33, #ff6699, #cc33ff, #3399ff);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+    overflow-x: hidden;
+    color: #fff;
+}
+
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header and Title Styles */
+header {
+    background: transparent;
+    text-align: center;
+    padding: 1em 0;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform:    upper case ;
+    background: linear-gradient(90deg, #ffcc33, #ff6699, #cc33ff, #3399ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientText 5s ease infinite;
+}
+
+@keyframes gradientText {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position : 0% 50%; }
+}
+
+/* Button Styles */
+#logout-btn {
+    background-color: #ff6699;
+    color: white;
+    border : none ; 
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#logout-btn:hover {
+    background-color: #fff;
+    transform: scale(1.1);
+}
+
+/* Dashboard Styles */
+#dashboard {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin: 0 2em;
+    backdrop-filter:  blur(10px);
+    animation: fadeIn 1s ease-in-out;
+}
+
+#learning-activities, #leaderboard {
+    width: 45%;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 1em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+ul li, ol li {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1em;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+ul li:hover, ol li:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: scale(1.05);
+}
+
+/* Three.js Container */
+#threejs-container {
+    width: 100%;
+    height : 500px;
+    margin-top: 2em;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Authentication Styles */
+#auth-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content  : center;
+    align-items: center;
+    z-index: 10;
+}
+
+#login-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#login-box input {
+    display: block;
+    width: 80%;
+    margin: 1em auto ;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 2em;
+}
+
+#login-btn {
+    background-color: #3399ff;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#login-btn:hover {
+    background-color: #0066cc;
+    transform: scale(1.1);
+}
+
+#login-error {
+    color: red;
+    margin-top: 1em;
+    font-size: 0.9em;
+}
