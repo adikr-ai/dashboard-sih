@@ -1,0 +1,14 @@
+{
+    "activities": [
+        { "name": "Math Quiz" },
+        { "name": "Science Experiment" },
+        { "name": "History Assignment" },
+        { "name": "Programming Challenge" }
+    ],
+    "leaderboard": [
+        { "name": "John Doe", "points": 1500 },
+        { "name": "Jane Smith", "points": 1400 },
+        { "name": "Sam Johnson", "points": 1350 },
+        { "name": "Emily Davis", "points": 1300 }
+    ]
+}
